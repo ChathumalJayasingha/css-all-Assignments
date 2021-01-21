@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Assignmet</title>
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        main {
+            position: relative;
+        }
+        
+        main>div>img {
+            width: 100%;
+            height: 500px;
+            position: relative;
+        }
+        
+        main>aside>img {
+            position: absolute;
+            top: 500px;
+            height: 30%;
+            animation: roadAnimation 10s;
+        }
+        
+        main>nav>img {
+            position: absolute;
+            top: 140px;
+            animation: cityAnimation 10s;
+            width: 150%;
+        }
+        
+        main>header>img {
+            position: absolute;
+            top: 400px;
+            height: 30%;
+            left: 450px;
+            animation: carAnimation 2s;
+        }
+        
+        main>footer>img:nth-child(1) {
+            position: absolute;
+            width: 70px;
+            top: 480px;
+            left: 480px;
+        }
+        
+        main>footer>img:nth-child(2) {
+            position: absolute;
+            width: 70px;
+            top: 480px;
+            left: 703px;
+        }
+        
+        main>footer>img {
+            animation: wheelAnimation 10s;
+        }
+        
+        @keyframes wheelAnimation {
+            0% {}
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes skyAnimation {
+            0% {}
+            100% {
+                transform: translateX(20px);
+            }
+        }
+        
+        @keyframes roadAnimation {
+            0% {}
+            100% {
+                transform: translateX(-1000px);
+            }
+        }
+        
+        @keyframes cityAnimation {
+            0% {}
+            100% {
+                transform: translateX(-200px);
+            }
+        }
+        
+        @keyframes carAnimation {}
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <img src="Car_Animation_Resources/sky.jpg" alt="sky">
+        </div>
+
+        <aside>
+            <img src="Car_Animation_Resources/road.jpg" alt="road">
+        </aside>
+
+        <nav>
+            <img src="Car_Animation_Resources/city.png" alt="city">
+        </nav>
+        <header>
+            <img src="Car_Animation_Resources/car.png" alt="car">
+        </header>
+        <footer>
+            <img src="Car_Animation_Resources/wheel.png" alt="wheel">
+            <img src="Car_Animation_Resources/wheel.png" alt="wheel">
+        </footer>
+    </main>
+</body>
+
+</html>
